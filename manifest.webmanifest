@@ -1,0 +1,11 @@
+{
+  "name": "Joe R. Rodriguez II - HMRT",
+  "short_name": "Joe HMRT",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#06111f",
+  "theme_color": "#081728",
+  "icons": [
+    {"src":"hmrt-icon-512.png","sizes":"512x512","type":"image/png"}
+  ]
+}
