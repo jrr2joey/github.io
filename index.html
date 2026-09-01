@@ -38,19 +38,59 @@ html,body{margin:0;background:#06111f;min-height:100%;font-family:Arial,Helvetic
 .personal-detail{left:55.3%;top:66.4%;width:21.0%;height:7.0%}
 .email-detail{left:55.3%;top:74.5%;width:21.0%;height:7.0%}
 .admin-detail{left:55.3%;top:82.3%;width:21.0%;height:6.5%}
-/* Replace the generated QR artwork with a real scannable code */
-.qr-real{
+/* Clean QR panel: completely covers the QR artwork baked into card.png */
+.qr-panel{
   position:absolute;
-  left:82.0%;
-  top:59.7%;
-  width:12.5%;
-  aspect-ratio:1;
-  background:#fff;
-  border:4px solid #d5ad3f;
-  border-radius:12px;
-  padding:.55%;
+  left:78.7%;
+  top:55.4%;
+  width:20.6%;
+  height:35.2%;
+  background:#07192b;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  border-left:1px solid rgba(213,173,63,.60);
   box-sizing:border-box;
+  z-index:4;
+}
+.qr-link{
+  display:block;
+  text-decoration:none;
+  text-align:center;
+  color:inherit;
+}
+.qr-frame{
+  width:132px;
+  height:132px;
+  padding:7px;
+  background:#fff;
+  border:3px solid #d5ad3f;
+  border-radius:10px;
+  box-sizing:border-box;
+  display:grid;
+  place-items:center;
+  margin:0 auto;
+}
+.qr-real{
+  display:block;
+  width:112px;
+  height:112px;
   object-fit:contain;
+}
+.qr-title{
+  margin-top:12px;
+  color:#d5ad3f;
+  font-size:16px;
+  font-weight:800;
+  letter-spacing:.03em;
+  line-height:1.15;
+}
+.qr-subtitle{
+  margin-top:6px;
+  color:#fff;
+  font-size:15px;
+  line-height:1.15;
 }
 @media (max-width:700px){
   .page{padding:0;align-items:start}
@@ -76,9 +116,15 @@ html,body{margin:0;background:#06111f;min-height:100%;font-family:Arial,Helvetic
     <a class="hotspot email-detail" href="mailto:Joe.Rodriguez2@HoustonTX.Gov" aria-label="Email Joe Rodriguez"></a>
     <a class="hotspot admin-detail" href="https://www.google.com/maps/search/?api=1&query=7825+Harrisburg+Blvd+Houston+TX+77012" aria-label="Open Admin location in Maps"></a>
 
-    <a href="https://houtx.sharepoint.com/sites/hfd/er/hm" aria-label="Open HMRT Team Home">
-      <img class="qr-real" src="qr-hmrt.png" alt="QR code to HMRT Team Home">
-    </a>
+    <div class="qr-panel">
+      <a class="qr-link" href="https://houtx.sharepoint.com/sites/hfd/er/hm" aria-label="Open HMRT Team Home">
+        <div class="qr-frame">
+          <img class="qr-real" src="qr-hmrt.png" alt="QR code to HMRT Team Home">
+        </div>
+        <div class="qr-title">HMRT TEAM HOME</div>
+        <div class="qr-subtitle">SharePoint</div>
+      </a>
+    </div>
 
   </section>
 </main>
