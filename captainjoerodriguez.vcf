@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Rodriguez;Joe R.;;Captain;
+FN:Captain Joe R. Rodriguez II
+ORG:Houston Fire Department;Hazardous Materials Response Team
+TITLE:HMRT Training Officer
+TEL;TYPE=WORK,VOICE,PREF:+17139077714
+TEL;TYPE=CELL,VOICE:+17135396005
+EMAIL;TYPE=INTERNET,WORK:Joe.Rodriguez2@HoustonTX.Gov
+ADR;TYPE=WORK:;;7825 Harrisburg Blvd;Houston;TX;77012;USA
+URL:https://jrr2joey.github.io/
+URL;TYPE=WORK:https://houtx.sharepoint.com/sites/hfd/er/hm
+NOTE:HMRT Training Officer
+END:VCARD
